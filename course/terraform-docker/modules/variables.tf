@@ -9,7 +9,7 @@ variable "container_name" {
 
 variable "image" {
   description = "image for container"
-  type        = "map"
+  type        = "map" # This specifys that a map is expected here
 }
 
 variable "int_port" {
