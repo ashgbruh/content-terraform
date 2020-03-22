@@ -1,6 +1,6 @@
 #-----compute/main.tf
 
-data "aws_ami" "server_ami" {
+data "aws_ami" "server_ami" { # we can go find the AMI name from the console, use of this (data resource) is best practice as it can query what it can query and filter possibilities from Amazon to ensure we always have the most up to date AMI
   most_recent = true
 
   owners = ["amazon"]
